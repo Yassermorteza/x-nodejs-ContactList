@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cotacts form</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8080/index">
+</head>
+<body>
+    <header>
+    	<span>Contacts</span>
+    	<span>Upload</span>
+    </header>
+	<fieldset>
+	 <legend>Add Contact</legend>
+		<form action="http://localhost:8080/contact" method="post">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required>
+		<label for="lastName">Lastname:</label>
+		<input type="text" name="lastName" id="lastName" required>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="phone">Phone:</label>
+		<input type="text" name="phone" id="phone" required>
+		<input type="submit" name="submit" id="btn" value="Save">
+	 </form>
+	</fieldset>
+	<a href="http://localhost:8080/upload">Upload your photo</a>
+</body>
+</html>

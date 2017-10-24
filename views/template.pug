@@ -1,0 +1,20 @@
+DOCTYPE html
+html(lang="en")
+ head
+   titel Contacts table
+   link(rel="stylesheet" type="text/css" href="http://localhost:8080/style")
+ body
+   main
+     h1 Contacts
+     table
+     fieldset
+       legend Send email
+       form(method="POST" action="http://localhost:8080/send-mail")
+          label(for="mailto") mail to:
+          input(type="text" name="mailto" id="mailto" required)
+          label(for="subject") subject:
+          input(type="text" name="subject" id="subject" placeholder="mail subject here..." required)
+          label(for="content") content:
+          textarea(name="content" id="content" minlength="50" maxlenght="200" required)
+          input(type="submit" value="Send")
+          script(type="text/javascript" src="http://localhost:8080/script")
